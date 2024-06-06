@@ -7,6 +7,10 @@ const app = express()
 
 const port = 4000
 
+const tejas = {
+    name:"Tejas",
+    work : "Developer"
+}
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
@@ -17,6 +21,9 @@ app.get('/twitter',(req,res)=>{
 
 app.get('/login',(req,res)=>{
     res.send('<h1>Tejas is the best</h1>')
+})
+app.get('/github',(req,res)=>{
+    res.json({tejas})
 })
 
 app.listen(process.env.PORT, () => {
