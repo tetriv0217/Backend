@@ -3,8 +3,6 @@ const express = require('express') //common js
 // import express from "express"//This is module js
 const app = express()
 
-
-
 const port = 4000
 
 const tejas = {
@@ -27,5 +25,5 @@ app.get('/github',(req,res)=>{
 })
 
 app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${process.env.PORT}`)
+  console.log(`Example app listening on port http://localhost:${process.env.PORT} `)
 })
